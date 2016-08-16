@@ -14,9 +14,14 @@
 
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
+# Custom unofficial build tag
+TARGET_UNOFFICIAL_BUILD_ID := temasek
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
+SCREEN_RATIO_PROPORTIONATE := true
+TARGET_SCREEN_ASPECT_RATIO := 16by9
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
